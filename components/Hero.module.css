@@ -1,5 +1,5 @@
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   padding-top: 140px; /* space for fixed navbar */
   display: flex;
   flex-direction: column;

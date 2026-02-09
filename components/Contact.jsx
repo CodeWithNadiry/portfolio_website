@@ -17,7 +17,7 @@ const Contact = () => {
 
           <div className={classes.actions}>
             <Link
-              href="mailto:your@email.com"
+              href="mailto:usmannadiry.dev@gmail.com"
               className={classes.link}
               aria-label="Send Email"
             >
@@ -26,7 +26,7 @@ const Contact = () => {
             </Link>
 
             <Link
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/usman-nadiry-0682aa398/"
               target="_blank"
               rel="noopener noreferrer"
               className={classes.link}
@@ -37,7 +37,7 @@ const Contact = () => {
             </Link>
 
             <Link
-              href="https://github.com/CodeWithNadiry"
+              href="https://github.com/CodeWithNadiry/"
               target="_blank"
               rel="noopener noreferrer"
               className={classes.link}
@@ -55,7 +55,7 @@ const Contact = () => {
           <p className={classes.thanks}>Thanks for scrolling.</p>
 
           <Link
-            href="/resume.pdf"
+            href="/usman's_cv.pdf"
             target="_blank"
             className={`${classes.link} ${classes.resume}`}
           >
