@@ -8,7 +8,7 @@ const Contact = () => {
     <section id="contact" className={`container ${classes.contact}`}>
       <div className={classes.content}>
       <div className={classes.image}>
-        <Image src="/contacts.jpg" alt="Contact image" fill priority />
+        <Image src="/freecon.jpg" alt="Contact image" fill priority />
       </div>
 
         <div className={classes.links}>
