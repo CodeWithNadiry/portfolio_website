@@ -55,7 +55,7 @@ const Contact = () => {
           <p className={classes.thanks}>Thanks for scrolling.</p>
 
           <Link
-            href="/usman's_cv.pdf"
+            href="https://drive.google.com/file/d/12AwN-i6Eq2qSGHQKZDH4RLvmIV5ygBbA/view?usp=drive_link"
             target="_blank"
             className={`${classes.link} ${classes.resume}`}
           >
