@@ -1,0 +1,141 @@
+.header {
+  z-index: 999;
+}
+
+/* Default state → transparent */
+.navbar {
+  padding-block: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* After scrolling 40px */
+.navbar.scrolled {
+  background-color: var(--dark-black);
+
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+}
+
+.logo span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--light-gray);
+}
+
+/* Menu button */
+.menuBtn {
+  background: none;
+  border: none;
+  color: var(--full-white);
+  cursor: pointer;
+}
+
+/* Nav links wrapper */
+.navlinks {
+  position: relative;
+}
+
+/* Menu */
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  display: none;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  background: linear-gradient(45deg, #050816, #2b2646);
+  padding: 1.5rem;
+  border-radius: 12px;
+
+  min-width: 180px;
+  margin-top: 30px;
+  list-style: none;
+}
+
+/* Links */
+.link {
+  text-decoration: none;
+  color: var(--light-gray);
+  font-size: 1.25rem;
+  transition: color 0.1s ease;
+}
+
+/* Hover */
+.link:hover {
+  color: var(--full-white);
+}
+
+/* Active */
+.active {
+  color: var(--full-white);
+}
+
+/* Open state */
+.open {
+  display: flex;
+}
+
+/* Desktop */
+@media (min-width: 670px) {
+  .menuBtn {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    background: transparent;
+    margin-top: 0;
+  }
+
+  .logo span {
+    font-size: 1.4rem;
+  }
+
+  .logoImg {
+    width: 34px;
+    height: 43px;
+  }
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Default navbar */
+.navbar {
+  padding-block: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  background: transparent;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* 👇 When scrolled */
+.scrolled {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+}

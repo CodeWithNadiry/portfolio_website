@@ -1,0 +1,36 @@
+.about {
+  background: var(--dark-black);
+  padding-block: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.cardList {
+  background: var(--very-dark-blue);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--very-dark-blue) 50%,
+    transparent
+  );
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+@media (min-width: 600px) {
+  .cardList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* keeps cards centered */
+    background: linear-gradient(
+    to right,
+    transparent,
+    var(--very-dark-blue) 70%,
+    transparent
+  );
+  }
+}

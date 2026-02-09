@@ -1,0 +1,172 @@
+.card {
+  min-width: 280px;
+  background: linear-gradient(180deg, #1d1836, #0f0c2a);
+  border-radius: 24px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+/* ================= LINKS ================= */
+
+.links {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  gap: 0.6rem;
+  z-index: 3;
+}
+
+.links a {
+  width: 34px;
+  height: 34px;
+  background: black;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.links a:hover {
+  transform: translateY(-2px);
+  background: var(--light-purple);
+}
+
+/* ================= IMAGE ================= */
+
+.cardImage {
+  background: #dfefff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+/* ================= CONTENT ================= */
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--big-text);
+  line-height: 1.55;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Default */
+.stack span {
+  color: var(--medium-purple);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.stack span:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Color pattern (matches your screenshot vibe) */
+.stack span:nth-child(3n + 1) {
+  color: #4cc9f0; /* blue */
+}
+
+.stack span:nth-child(3n + 2) {
+  color: #21b080; /* green */
+}
+
+.stack span:nth-child(3n + 3) {
+  color: #f2277e; /* pink */
+}
+
+
+
+/* ================= BREAKPOINTS ================= */
+
+/* ≥ 600px */
+@media (min-width: 600px) {
+  .card {
+    min-width: 300px;
+  }
+
+  .cardImage img {
+    height: 200px;
+  }
+}
+
+/* ≥ 800px */
+@media (min-width: 800px) {
+  .card {
+    min-width: 320px;
+    padding: 1.3rem;
+  }
+
+  .cardImage img {
+    height: 210px;
+  }
+
+  .links a {
+    width: 40;
+    height: 40;
+  }
+}
+
+/* ≥ 920px */
+@media (min-width: 920px) {
+  .card {
+    min-width: 340px;
+  }
+
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+  .links a{
+    width: 50px;
+  height: 50px;
+  }
+}
+
+/* ≥ 1050px */
+@media (min-width: 1050px) {
+  .card {
+    min-width: 360px;
+  }
+
+  .cardImage img {
+    height: 220px;
+  }
+}
+
+/* ≥ 1200px */
+@media (min-width: 1200px) {
+  .card {
+    min-width: 380px;
+  }
+
+  .cardImage img {
+    height: 230px;
+  }
+}

@@ -1,0 +1,145 @@
+.hero {
+  min-height: 100vh;
+  padding-top: 140px; /* space for fixed navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 2.8rem;
+}
+
+/* ================= IMAGE ================= */
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.imageBorder {
+  padding: 8px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #101841, #8379be);
+  display: flex;
+}
+
+.profileImg {
+  border-radius: 50%;
+  background: var(--dark-purple);
+  padding-top: 4px;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+/* Left indicator (dot + line) */
+.indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--soft-purple);
+}
+
+.line {
+  width: 3px;
+  height: 190px;
+  background: linear-gradient(to bottom, var(--soft-purple), transparent);
+}
+
+/* Text */
+.text h1 {
+  font-size: clamp(3rem, 6vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--full-white);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.name {
+  display: block;
+  color: var(--soft-purple);
+}
+
+.text p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--light-gray);
+}
+
+.stack {
+  font-weight: 700;
+  background: linear-gradient(90deg, #d87345, #28bec2);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width: 670px) {
+  .hero {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 180px;
+  }
+  
+  .profileImg {
+    width: 240px;
+    height: 240px;
+  }
+  .content {
+    order: 1;
+  }
+
+  .text h1 {
+    font-size: clamp(4rem, 5vw, 5rem);
+    letter-spacing: -0.03em;
+  }
+
+  .text p{
+    font-size: 1.6rem;
+    max-width: 550px;
+  }
+
+  .imageWrapper {
+    order: 2;
+  }
+
+  .line {
+  width: 7px;
+  height: 250px;
+}
+}
+
+@media(min-width: 920px) {
+  .profileImg {
+    width: 290px;
+    height: 290px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .profileImg {
+    width: 340px;
+    height: 340px;
+  }
+
+  .text h1 {
+    font-size: clamp(6.5rem, 5.5vw, 7vw);
+  }
+  .line {
+    height: 320px;
+  }
+}

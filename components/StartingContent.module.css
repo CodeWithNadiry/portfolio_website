@@ -1,0 +1,37 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.label{
+  color: var(--small-text);
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 1.2px;
+  font-size: 1.3rem;
+}
+
+.heading {
+  font-size: 2.8rem;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  margin-block: 10px;
+}
+
+.text {
+  color: var(--big-text);
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+@media(min-width: 920px) {
+  .heading {
+    font-size: 4.2rem;
+  }
+
+  .text {
+    max-width: 800px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+}

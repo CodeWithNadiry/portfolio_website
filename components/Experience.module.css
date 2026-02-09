@@ -1,0 +1,75 @@
+.experience {
+  background: var(--dark-black);
+  padding-block: 2rem;
+}
+
+.label {
+  color: var(--small-text);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 1.2px;
+  font-size: 1rem;
+}
+
+.heading {
+  font-size: 2.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  margin-block: 10px;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  margin-left: 50px;
+}
+
+/* Vertical line */
+.experienceList::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1%;
+  height: 102%;
+  width: 4px;
+  background: white;
+  transform: translateX(-1.6rem);
+}
+
+/* ================= BREAKPOINTS ================= */
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3.2rem;
+  }
+
+  .label {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .heading {
+    font-size: 3.6rem;
+  }
+}
+
+/* ================= DESKTOP TIMELINE ================= */
+
+@media (min-width: 1050px) {
+  .experienceList {
+    margin-left: 0;
+    gap: 4rem;
+  }
+
+  /* Center the line */
+  .experienceList::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,21 @@
+.projects {
+  background: var(--dark-black);
+  padding-block: 80px;
+}
+
+.projectsList {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+
+  /* hide scrollbar */
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE & Edge (legacy) */
+  padding-block: 4rem;
+  scroll-snap-type: x mandatory;
+}
+
+.projectsList::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Edge */
+}
