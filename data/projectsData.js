@@ -9,18 +9,9 @@ export const projects = [
       "A full-stack e-commerce platform where users can browse, search, and order products online. Includes an admin dashboard for managing products, users, and orders efficiently.",
     stack: "#React #NodeJS #Express #MongoDB",
   },
+  
   {
     id: 2,
-    liveLink: "https://events-management-bqc7.vercel.app/",
-    githubLink: "https://github.com/CodeWithNadiry/events_management",
-    preview: "/projects/events.png",
-    title: "Event Management App",
-    description:
-      "A MERN-based event management application allowing users to create, edit, and delete events with secure image uploads and a fully RESTful backend API.",
-    stack: "#React #NodeJS #Express #MongoDB",
-  },
-  {
-    id: 3,
     liveLink: "https://food-order-app-contextapi.vercel.app/",
     githubLink: "https://github.com/CodeWithNadiry/food_order_app_contextApi",
     preview: "/projects/food.png",
@@ -30,7 +21,7 @@ export const projects = [
     stack: "#React #ContextAPI #JavaScript",
   },
   {
-    id: 4,
+    id: 3,
     liveLink: "https://quiz-app-dun-rho.vercel.app/",
     githubLink: "https://github.com/CodeWithNadiry/quiz_app",
     preview: "/projects/quiz.png",
@@ -40,7 +31,7 @@ export const projects = [
     stack: "#React #JavaScript #ContextAPI",
   },
   {
-    id: 5,
+    id: 4,
     liveLink: "https://place-picker-xuxk.vercel.app/",
     githubLink: "https://github.com/CodeWithNadiry/place_picker",
     preview: "/projects/placepicker.png",
@@ -50,7 +41,7 @@ export const projects = [
     stack: "#React #NodeJS #Express #ContextAPI",
   },
   {
-    id: 6,
+    id: 5,
     liveLink: "https://projects-website-three.vercel.app/",
     githubLink: "https://github.com/CodeWithNadiry/projects_website",
     preview: "/projects/projects.jpg",
@@ -60,7 +51,7 @@ export const projects = [
     stack: "#React #JavaScript #TailwindCSS",
   },
   {
-    id: 7,
+    id: 6,
     liveLink: "https://foodies-next-app-ebon.vercel.app/",
     githubLink: "https://github.com/CodeWithNadiry/foodies-next-app",
     preview: "/projects/nextjsfood.png",
@@ -68,5 +59,15 @@ export const projects = [
     description:
       "A Next.js food management app that allows users to view, add, edit, and delete food items with real-time UI updates and smooth interactions.",
     stack: "#NextJS #React #MongoDB #TailwindCSS",
+  },
+  {
+    id: 7,
+    liveLink: "https://events-management-bqc7.vercel.app/",
+    githubLink: "https://github.com/CodeWithNadiry/events_management",
+    preview: "/projects/events.png",
+    title: "Event Management App",
+    description:
+      "A MERN-based event management application allowing users to create, edit, and delete events with secure image uploads and a fully RESTful backend API.",
+    stack: "#React #NodeJS #Express #MongoDB",
   },
 ];
