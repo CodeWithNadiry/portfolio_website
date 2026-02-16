@@ -70,4 +70,14 @@ export const projects = [
       "A MERN-based event management application allowing users to create, edit, and delete events with secure image uploads and a fully RESTful backend API.",
     stack: "#React #NodeJS #Express #MongoDB",
   },
+  {
+    id: 8,
+    liveLink: "https://task-manager-kappa-three-33.vercel.app/",
+    githubLink: "https://github.com/CodeWithNadiry/Task-Manager",
+    preview: "/projects/task_manager.png",
+    title: "Task Manager App",
+    description:
+      "A MERN-based task manager allowing users to create, edit, and delete tasks with built-in timer functionality and localStorage persistence.",
+    stack: "#React #LocalStorage #Context #useReducer",
+  }
 ];
