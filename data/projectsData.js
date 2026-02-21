@@ -9,7 +9,7 @@ export const projects = [
       "A full-stack e-commerce platform where users can browse, search, and order products online. Includes an admin dashboard for managing products, users, and orders efficiently.",
     stack: "#React #NodeJS #Express #MongoDB",
   },
-  
+
   {
     id: 2,
     liveLink: "https://food-order-app-contextapi.vercel.app/",
@@ -79,5 +79,15 @@ export const projects = [
     description:
       "A MERN-based task manager allowing users to create, edit, and delete tasks with built-in timer functionality and localStorage persistence.",
     stack: "#React #LocalStorage #Context #useReducer",
-  }
+  },
+  {
+    id: 9,
+    liveLink: "https://ecommerce-react-project-eight.vercel.app/",
+    githubLink: "https://github.com/CodeWithNadiry/Ecommerce-React-Project",
+    preview: "/projects/e-commerce.png",
+    title: "E-commerce App",
+    description:
+      "A React-based e-commerce app with Zustand state management, dynamic routing, role-based access control, and localStorage persistence.",
+    stack: "#React #LocalStorage #Zustand",
+  },
 ];
